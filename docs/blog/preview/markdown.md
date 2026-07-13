@@ -162,10 +162,207 @@ H~2~O
 
 :::
 
-**示例容器2：**
+**代码：**
 
-::: window title="示例" height="200px"
+```js whitespace
+const a = 1
+const b = 2
+const c = a + b
 
+// [!code word:obj]
+const obj = {
+  toLong: {
+    deep: {
+      deep: {
+        deep: {
+          value: 'this is to long text. this is to long text. this is to long text. this is to long text.', // [!code highlight]
+        }
+      }
+    }
+  }
+}
+```
+
+**代码分组：**
+
+::: code-tabs
+@tab tab1
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+@tab tab2
+
+```ts
+const a: number = 1
+const b: number = 2
+const c: number = a + b
+```
+
+:::
+
+**代码块高亮：**
+
+```ts
+function foo() {
+  const a = 1 // [!code highlight]
+
+  console.log(a)
+
+  const b = 2 // [!code ++]
+  const c = 3 // [!code --]
+
+  console.log(a + b + c) // [!code error]
+  console.log(a + b) // [!code warning]
+}
+```
+
+**代码块聚焦：**
+
+```ts
+function foo() {
+  const a = 1 // [!code focus]
+}
+```
+
+::: tip 仅标题
+:::
+
+::: note 注释
+注释内容 [link](https://github.com/pengzhanbo) `inline code`
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+:::
+
+::: info 信息
+信息内容 [link](https://github.com/pengzhanbo) `inline code`
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+:::
+
+::: tip 提示
+提示内容 [link](https://github.com/pengzhanbo) `inline code`
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+:::
+
+::: warning 警告
+警告内容 [link](https://github.com/pengzhanbo) `inline code`
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+:::
+
+::: caution 错误
+错误内容 [link](https://github.com/pengzhanbo) `inline code`
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+:::
+
+::: important 重要
+重要内容 [link](https://github.com/pengzhanbo) `inline code`
+
+```js
+const a = 1
+const b = 2
+const c = a + b
+```
+
+:::
+
+::: details 详细标题
+
+这里是内容。
+:::
+
+**GFM alert：**
+
+> [!note]
+> note
+
+> [!info]
+> info
+
+> [!tip]
+> tip
+
+> [!warning]
+> warning
+
+> [!caution]
+> caution
+
+> [!important]
+> important
+
+**代码演示：**
+
+:::: demo title="常规示例" desc="一个常规示例"
+
+::: code-tabs
+@tab HTML
+
+```html
+<div id="app">
+  <h3>vuepress-theme-plume</h3>
+</div>
+```
+
+@tab Javascript
+
+```js
+const a = 'So Awesome!'
+const app = document.querySelector('#app')
+app.appendChild(window.document.createElement('small')).textContent = a
+```
+
+@tab CSS
+
+```css
+#app {
+  font-size: 2em;
+  text-align: center;
+}
+```
+
+:::
+::::
+
+**代码演示2：**
+
+:::: demo title="常规示例" desc="一个常规示例"
+
+::: code-tabs
+@tab HTML
+
+```html
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -408,196 +605,6 @@ H~2~O
 </body>
 </html>
 
-:::
-
-**代码：**
-
-```js whitespace
-const a = 1
-const b = 2
-const c = a + b
-
-// [!code word:obj]
-const obj = {
-  toLong: {
-    deep: {
-      deep: {
-        deep: {
-          value: 'this is to long text. this is to long text. this is to long text. this is to long text.', // [!code highlight]
-        }
-      }
-    }
-  }
-}
-```
-
-**代码分组：**
-
-::: code-tabs
-@tab tab1
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-@tab tab2
-
-```ts
-const a: number = 1
-const b: number = 2
-const c: number = a + b
-```
-
-:::
-
-**代码块高亮：**
-
-```ts
-function foo() {
-  const a = 1 // [!code highlight]
-
-  console.log(a)
-
-  const b = 2 // [!code ++]
-  const c = 3 // [!code --]
-
-  console.log(a + b + c) // [!code error]
-  console.log(a + b) // [!code warning]
-}
-```
-
-**代码块聚焦：**
-
-```ts
-function foo() {
-  const a = 1 // [!code focus]
-}
-```
-
-::: tip 仅标题
-:::
-
-::: note 注释
-注释内容 [link](https://github.com/pengzhanbo) `inline code`
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-:::
-
-::: info 信息
-信息内容 [link](https://github.com/pengzhanbo) `inline code`
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-:::
-
-::: tip 提示
-提示内容 [link](https://github.com/pengzhanbo) `inline code`
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-:::
-
-::: warning 警告
-警告内容 [link](https://github.com/pengzhanbo) `inline code`
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-:::
-
-::: caution 错误
-错误内容 [link](https://github.com/pengzhanbo) `inline code`
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-:::
-
-::: important 重要
-重要内容 [link](https://github.com/pengzhanbo) `inline code`
-
-```js
-const a = 1
-const b = 2
-const c = a + b
-```
-
-:::
-
-::: details 详细标题
-
-这里是内容。
-:::
-
-**GFM alert：**
-
-> [!note]
-> note
-
-> [!info]
-> info
-
-> [!tip]
-> tip
-
-> [!warning]
-> warning
-
-> [!caution]
-> caution
-
-> [!important]
-> important
-
-**代码演示：**
-
-:::: demo title="常规示例" desc="一个常规示例"
-
-::: code-tabs
-@tab HTML
-
-```html
-<div id="app">
-  <h3>vuepress-theme-plume</h3>
-</div>
-```
-
-@tab Javascript
-
-```js
-const a = 'So Awesome!'
-const app = document.querySelector('#app')
-app.appendChild(window.document.createElement('small')).textContent = a
-```
-
-@tab CSS
-
-```css
-#app {
-  font-size: 2em;
-  text-align: center;
-}
 ```
 
 :::
